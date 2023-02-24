@@ -17,6 +17,22 @@ if(ScrollTrigger.isTouch !== 1){
             scrub: true
         }
     })
-
-    
 }
+
+// modal 
+
+
+
+$(document).ready(function() {
+    $('.gallery__item').on('click',  function(){
+        elemid = this.id;
+        elem = $("."+elemid+" .modal");
+        elem.toggle();
+        $("body").css({"overflow-y": "hidden"})
+    });
+    $('.modal').on('click',  function(){
+        $('.modal').toggle();
+        $("body").css({"overflow-y": "scroll"})
+    })
+});
+
