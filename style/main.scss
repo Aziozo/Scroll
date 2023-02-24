@@ -137,7 +137,7 @@ body::-webkit-scrollbar {
 .modal-conatiner{
     display: flex;
     transition: 0.3s;
-    animation: modal-in 1s both;
+    animation: modal-in 0.7s both;
     flex-direction: column;
     background-color: #fff;
     border-radius: 8px;
