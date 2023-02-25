@@ -6,17 +6,6 @@ body {
   overflow: hidden;
 }
 
-svg {
-  overflow: visible;
-  height: 100%;
-  transform: translateZ(0);
-}
-
-path {
-  stroke-width: 2;
-  stroke: black;
-}
-
 .container {
   min-width: 100%;
   min-height: 100%;
@@ -34,6 +23,7 @@ path {
 }
 
 .planet {
+  z-index: 10;
   cursor: pointer;
   position: absolute;
   width: 120px;
@@ -65,5 +55,6 @@ path {
 }
 
 #sixth {
-  left: 228px;
+  left: 209px;
+  top: 26px;
 }

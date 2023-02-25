@@ -74,6 +74,18 @@ gsap.to(fifth, {
     alignOrigin: [0.5, 0.5]
   }
 })
+gsap.to(sixth, {
+  duration: time, 
+  repeatDelay: 3,
+  yoyo: true,
+  ease: "power1.inOut",
+  motionPath:{
+    path: "M 608 212 C 694 161 1086 137 1171 170",
+    align: "#path1",
+    autoRotate: false,
+    alignOrigin: [0.5, 0.5]
+  }
+})
 
 
 
