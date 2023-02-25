@@ -1,39 +1,78 @@
 gsap.registerPlugin(MotionPathPlugin);
 
 function move() {
-tr = $(".top-right")
-rd = $('.right-down')
-gsap.to(tr, {
-  duration: 5, 
+
+first = $('.first-second')
+second = $('.second-third')
+third = $('.third-fourth')
+fourth = $('.fourth-fifth')
+fifth = $('.fifth-sixth')
+sixth = $('.sixth-first')
+
+
+
+gsap.to(first, {
+  duration: 2, 
   repeatDelay: 3,
   yoyo: true,
   ease: "power1.inOut",
   motionPath:{
-    path: "M 566 112 C 628 109 833 128 832 248",
+    path: "M 1169 167 C 1573 255 1626 443 1584 499",
+    align: "#path1",
+    autoRotate: false,
+    alignOrigin: [0.5, 0.5]
+  }
+})
+gsap.to(second, {
+  duration: 2, 
+  repeatDelay: 3,
+  yoyo: true,
+  ease: "power1.inOut",
+  motionPath:{
+    path: "M 1583 497 C 1665 599 1405 779 1344 756",
     align: "#path1",
     autoRotate: false,
     alignOrigin: [0.5, 0.5]
   }
 })
 
-gsap.to(rd, {
-  duration: 5, 
+gsap.to(third, {
+  duration: 2, 
   repeatDelay: 3,
   yoyo: true,
   ease: "power1.inOut",
   motionPath:{
-    path: "M 832 248 C 851 344 628 392 602 382",
+    path: "M 1371 770 C 1221 849 906 891 611 795",
     align: "#path1",
     autoRotate: false,
     alignOrigin: [0.5, 0.5]
   }
-}
-)
+})
 
-setTimeout(function() {
-  $('.container').css("background-color", "#8bf0c3")
-}, 5000);
-
+gsap.to(fourth, {
+  duration: 2, 
+  repeatDelay: 3,
+  yoyo: true,
+  ease: "power1.inOut",
+  motionPath:{
+    path: "M 615 795 C 532 766 357 691 333 546",
+    align: "#path1",
+    autoRotate: false,
+    alignOrigin: [0.5, 0.5]
+  }
+})
+gsap.to(fifth, {
+  duration: 2, 
+  repeatDelay: 3,
+  yoyo: true,
+  ease: "power1.inOut",
+  motionPath:{
+    path: "M 334 552 C 271 377 509 238 615 212",
+    align: "#path1",
+    autoRotate: false,
+    alignOrigin: [0.5, 0.5]
+  }
+})
 
 
 

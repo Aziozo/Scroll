@@ -28,20 +28,42 @@ path {
 }
 
 .planets {
-  min-width: 100%;
-  height: 400px;
+  min-width: 1400px;
+  height: 700px;
   position: relative;
 }
 
 .planet {
+  cursor: pointer;
   position: absolute;
+  width: 120px;
+  height: 120px;
 }
 
 #first {
-  left: calc(50% - 50px);
+  left: 794px;
 }
 
 #second {
-  left: calc(50% - 50px + 266px);
-  top: 136px;
+  left: 1209px;
+  top: 332px;
+}
+
+#third {
+  left: 970px;
+  top: 591px;
+}
+
+#fourth {
+  left: 210px;
+  top: 616px;
+}
+
+#fifth {
+  left: -72px;
+  top: 366px;
+}
+
+#sixth {
+  left: 228px;
 }
