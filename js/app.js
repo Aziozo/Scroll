@@ -9,10 +9,11 @@ fourth = $('.fourth-fifth')
 fifth = $('.fifth-sixth')
 sixth = $('.sixth-first')
 
+time = 3;
 
 
 gsap.to(first, {
-  duration: 2, 
+  duration: time, 
   repeatDelay: 3,
   yoyo: true,
   ease: "power1.inOut",
@@ -24,7 +25,7 @@ gsap.to(first, {
   }
 })
 gsap.to(second, {
-  duration: 2, 
+  duration: time, 
   repeatDelay: 3,
   yoyo: true,
   ease: "power1.inOut",
@@ -37,7 +38,7 @@ gsap.to(second, {
 })
 
 gsap.to(third, {
-  duration: 2, 
+  duration: time, 
   repeatDelay: 3,
   yoyo: true,
   ease: "power1.inOut",
@@ -50,7 +51,7 @@ gsap.to(third, {
 })
 
 gsap.to(fourth, {
-  duration: 2, 
+  duration: time, 
   repeatDelay: 3,
   yoyo: true,
   ease: "power1.inOut",
@@ -62,7 +63,7 @@ gsap.to(fourth, {
   }
 })
 gsap.to(fifth, {
-  duration: 2, 
+  duration: time, 
   repeatDelay: 3,
   yoyo: true,
   ease: "power1.inOut",
