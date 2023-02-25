@@ -5,61 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="libs/gsap/gsap.min.js"></script>
-    <script src="libs/gsap/ScrollSmoother.min.js" defer></script>
-    <script src="libs/gsap/ScrollTrigger.min.js" defer></script>
     <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
         crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/MotionPathPlugin.min.js"></script>
     <link rel="stylesheet" href="./style/main.min.css">
     <script src="./js/app.js" defer></script>
 </head>
 <body>
-   <div class="wrapper">
-        <div class="content">
-            <header class="hero-section">
-                <img data-speed=".6" class="hero" src="./img/hero.png" alt="">
-                <div class="container">
-                    <div data-speed=".75" class="main-header">
-                        <h1 class="main-title">ARSENIY DESIGN</h1>
-                    </div>
-                </div>
-            </header>
-            <div  class="portfolio">
-                <div class="container">
-                    <div class="gallery">
-                        <div data-speed=".9" class="gallery__left">
-                        <div class="gallery__item" id="agro">
-                            <h2 class="text-block__h">Agromars Group</h2>
-                            <img src="img/work/1.png" alt="">
-                        </div>
-                            
-                            <img class="gallery__item" src="img/work/2.jpg" alt="">
-                           
-                            <img class="gallery__item" src="img/work/6.jpg" alt="">
-                        </div>
-                        <div data-speed="1" class="gallery__right">
-                            <img class="gallery__item" src="img/work/3.jpg" alt="">
-                            <img class="gallery__item" src="img/work/4.jpg" alt="">
-                            <img class="gallery__item" src="img/work/5.jpg" alt="">
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <div class="container">
+        <div class="planets">
+            <img class="top-right planet" id="first"  src="./img/sticker.png" alt="" width="100" height="100" onclick="move()">
+            <img class="right-down planet" id="second" src="./img/sticker1.png" alt="" width="100" height="100" onclick="move()">
         </div>
-   </div>
-   <div class="modals">
-        <div class="agro">
-            <div class="modal" style="display: none;">
-                <div class="modal-conatiner">
-                    <img src="./img/work/agro-modal.png" alt="">
-                    <div class="project-descr">
-                        <h1>Agromars Group</h1>
-                        <p>Website development for an agricultural company selling tires.</p>
-                        <a href="https://www.figma.com/file/QcRHCLuJhAMSoxB9QuXhVO/AgroShina">View</a>
-                        </div>
-                </div>
-            </div>
-        </div>
-   </div>
+    </div>
+    
 </body>
 </html>
+

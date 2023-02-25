@@ -1,38 +1,45 @@
-gsap.registerPlugin(ScrollTrigger, ScrollSmoother)
+gsap.registerPlugin(MotionPathPlugin);
 
-if(ScrollTrigger.isTouch !== 1){
-    ScrollSmoother.create({
-        wrapper: '.wrapper',
-        content: '.content',
-        smooth: 1.5,
-        effects: true,
-    });
+function move() {
+tr = $(".top-right")
+rd = $('.right-down')
+gsap.to(tr, {
+  duration: 5, 
+  repeatDelay: 3,
+  yoyo: true,
+  ease: "power1.inOut",
+  motionPath:{
+    path: "M 566 112 C 628 109 833 128 832 248",
+    align: "#path1",
+    autoRotate: false,
+    alignOrigin: [0.5, 0.5]
+  }
+})
 
-    gsap.fromTo('.hero-section', {opacity: 1}, {
-        opacity: 0, 
-        scrollTrigger: {
-            trigger: '.hero-section',
-            start: 'center',
-            end: '820',
-            scrub: true
-        }
-    })
+gsap.to(rd, {
+  duration: 5, 
+  repeatDelay: 3,
+  yoyo: true,
+  ease: "power1.inOut",
+  motionPath:{
+    path: "M 832 248 C 851 344 628 392 602 382",
+    align: "#path1",
+    autoRotate: false,
+    alignOrigin: [0.5, 0.5]
+  }
+}
+)
+
+setTimeout(function() {
+  $('.container').css("background-color", "#8bf0c3")
+}, 5000);
+
+
+
+
 }
 
-// modal 
 
 
 
-$(document).ready(function() {
-    $('.gallery__item').on('click',  function(){
-        elemid = this.id;
-        elem = $("."+elemid+" .modal");
-        elem.toggle();
-        $("body").css({"overflow-y": "hidden"})
-    });
-    $('.modal').on('click',  function(){
-        $('.modal').toggle();
-        $("body").css({"overflow-y": "scroll"})
-    })
-});
 
